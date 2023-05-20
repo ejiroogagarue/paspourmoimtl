@@ -50,7 +50,7 @@ const Nav = () => {
               </div>
             </div>
 
-            <Link  href="/"><a className={styles.logo}><h1>PAS POUR MOI</h1></a></Link>
+            <Link  href="/"><a className={styles.logo}>PAS POUR MOI</a></Link>
            
             <Cart
               cartQuantity={cartQuantity}
