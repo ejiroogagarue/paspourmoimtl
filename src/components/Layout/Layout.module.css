@@ -1,0 +1,197 @@
+
+.mainWrapper {
+ background-color: #000000;
+  width:100vw;
+  margin-top: 4rem;
+}
+
+
+.logoHeader{
+  font-family: "condor", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: #ffffff;
+  white-space: nowrap;
+  font-size: 7.3rem;
+
+  justify-self: center;
+  margin-right: 8.125rem;
+
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr auto;
+}
+
+
+.headerWrapper {
+  background-color: #000000;
+  padding-left: 4rem;
+
+ width: 100%;
+ display: grid;
+ grid-template-columns: 1fr 1fr 1fr;
+ padding-top: 1rem;
+}
+
+.menu {
+/* 
+  color: #ffffff; */
+  
+  display: flex;
+  align-items: center;
+}
+
+.menuName {
+  font-family: "condor", sans-serif;
+  font-weight: 400;
+  text-align: center;
+  font-size: 1.5rem;
+  margin-right: 1rem;
+  
+  display: block;
+  margin-left: 10px;
+  margin-top: 2px;
+}
+
+
+.navigation {
+     display: grid;
+
+    grid-template-columns: auto 1fr;
+   
+    height: 15vh;
+   
+}
+.logoWrapper {
+    width: 104%;
+    height: auto;
+    
+  }
+  
+  .logoWrapper .image {
+    width: 100%;
+    height: 100%;
+    }
+    .menu {
+      margin-top: 0%;
+        font-family: 'Shippori Mincho', serif;
+        color: #ffffff;
+
+
+    }
+  
+
+    .navContainer {
+      display: flex;
+      justify-content: flex-end;
+      /* flex-direction: column; */
+      width: 100%;
+      /* margin-top: 1.0rem; */
+    }
+  .cartComponent {
+    margin-left: auto;
+    margin-right: 8rem;
+  }
+
+    .lineIcon {
+      padding-top: 5px;
+    }
+
+    .lineTop,
+    .lineBottom {
+      margin: 0 auto;
+      /* position: absolute; */
+      display: block;
+      width: 42px;
+      height: 3px;
+      /* border-radius: 10px; */
+      background: white;
+      transform: rotate(0deg);
+      transition: all 0.4s;
+    }
+    
+    .lineTop {
+      margin-bottom: 0.5rem;
+    }
+    
+    .lineBottom {
+      bottom: 2.2rem;
+    }
+    
+    .lineTop.spin {
+      top: 2.35em;
+      transform: rotate(135deg);
+      background: #000;
+    }
+    
+    .lineBottom.spin {
+      bottom: 2.35em;
+      transform: rotate(225deg);
+      background: #000;
+    }
+    
+
+
+    .nav-overlay {
+      position: fixed;
+      background: #18181c;
+      z-index: -2;
+      top: -100%;
+      left: 0;
+      width: 100%;
+      height: 100vh;
+      overflow: hidden;
+      padding: 4em;
+      transition: all 2s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+
+  
+    
+ 
+
+
+ 
+
+    @media (max-width: 1536px) {
+      
+      
+      
+    }
+    @media (max-width: 1280px) {	
+      
+
+    
+    }
+    @media (max-width: 1024px) {
+      .mainWrapper{
+        margin-top: 0;
+        padding-left: 2rem;
+        padding-right: 2rem;
+      }
+      
+      
+    }
+
+    @media (max-width: 768px) {
+
+
+       
+    }
+
+
+    @media (max-width: 640px) {
+      
+     
+      
+    }
+
+    @media (max-width: 475px) {
+      
+     
+      
+    }
+
+    

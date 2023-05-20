@@ -1,21 +1,22 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import { Inter } from 'next/font/google'
+
 import styles from '@/styles/Home.module.css'
 import { getProductsInCollection } from '../../lib/shopify'
-import ProductList from '@/components/ProductList'
+import ProductList from '@/components/ProductList/ProductList'
 
-const inter = Inter({ subsets: ['latin'] })
+import HomePage from './home'
+
 
 export default function Home({ products}) {
 
-  console.log(products)
+ 
   return (
     <>
-      <div>
-        Hello form Shopify Next.js
-        <ProductList products={products}/>
-      </div>
+      
+       
+        <HomePage/>
+     
     </>
   )
 }

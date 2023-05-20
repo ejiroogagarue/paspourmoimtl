@@ -1,0 +1,45 @@
+import React from "react";
+import styles from "@/styles/About.module.css";
+import Image from "next/image";
+const about = () => {
+  return (
+    <>
+      <h2>About</h2>
+
+      <div className={styles.container}>
+        <div className={styles.aboutWrapper}>
+          {/* <h2 className={styles.aboutTitle}>ABOUT</h2> */}
+          <h2 className={styles.title}>PAS POUR MOI.</h2>
+          <h2 className={styles.subTitle}>DESIGNED IN TORONTO</h2>
+          <p className={styles.about}>
+            PAS POUR MOI is a Toronto based brand that makes eyewear and
+            accessories designed for movement in the city.
+          </p>
+
+          <div>
+            <h2 className={styles.contactTitle}>Contact Us</h2>
+
+            <h3 className={styles.contactSubTitle}>
+              Email: info@paspourmoi.com
+            </h3>
+
+            <h3 className={styles.contactSubTitle}>Instagram: @paspourmoii</h3>
+          </div>
+        </div>
+        <div className={styles.aboutPhoto}>
+          <div className={`${styles.imageWrapper} `}>
+            <Image
+              src="/editorial/ppm.png"
+              alt="Bun and Remy on the grass"
+              width={950}
+              height={950}
+              className={styles.image}
+            />
+          </div>
+        </div>
+      </div>
+    </>
+  );
+};
+
+export default about;

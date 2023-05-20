@@ -1,0 +1,37 @@
+.productFormWrapper {
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+ 
+
+}
+.price {
+    font-family: "condor", sans-serif;
+    font-weight: 300;
+    font-size: 2rem;
+}
+
+
+.pushable {
+    background:  #3b3b3b;
+    border-radius: 12px;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    outline-offset: 4px;
+    margin-top: 2rem;
+  } 
+  .front {
+    display: block;
+    padding: 12px 25px;
+    border-radius: 12px;
+    font-size: 1.25rem;
+    background: hsl(359deg 100% 0%);
+    color: white;
+    transform: translateY(-6px);
+  }
+
+  .pushable:active .front {
+    transform: translateY(-2px);
+  }

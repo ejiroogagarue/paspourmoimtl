@@ -1,0 +1,145 @@
+.container {
+    display: flex;
+    /* height: 85vh; */
+    margin-left: 2rem;
+    background-color: #000;
+    margin-right: 2rem;
+}
+
+.aboutWrapper {
+    align-self: center;
+    margin-bottom: 2rem;
+    width: 30%;
+}
+
+.title {
+    color: #fff;
+    font-size: 4.5rem;
+    font-family: "condor", sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+.subTitle{
+    color: #fff;
+    font-size: 2rem;
+    font-family: "condor", sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    /* margin-left: 5rem; */
+    margin-bottom: 6rem;
+    white-space: nowrap;
+}
+
+.about{
+    color: #fff;
+    font-size: 1.5rem;
+    font-family: "condor", sans-serif;
+    font-weight: 300;
+    margin-bottom: 4rem;
+    /* white-space: nowrap;  */
+}
+.aboutPhoto {
+    margin-left: 20rem;
+}
+.imageWrapper {
+    width: 100%;
+  
+    overflow: hidden;
+    justify-self: flex-end;
+    /* margin: 0 auto; */
+  }
+  
+  .imageWrapper .image {
+    width: 100%;
+    height: 100%;
+  }
+
+
+  .contactTitle {
+    color: #fff;
+    font-size: 4rem;
+    font-family: "condor", sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 6rem;
+    white-space: nowrap;
+  }
+
+
+  .contactSubTitle {
+    color: #fff;
+    font-size: 2rem;
+    font-family: "condor", sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+    white-space: nowrap;
+  }
+
+
+
+@media (max-width: 1536px) {
+}
+@media (max-width: 1280px) {
+   
+   
+}
+@media (max-width: 1193px) {
+
+    .container {
+     flex-direction: column;
+     margin-bottom: 10rem;
+       
+    }
+
+    .aboutPhoto{
+        margin-left: 0;
+    }
+}
+ 
+
+@media (max-width: 990px) {
+    .aboutWrapper {
+        align-self: flex-start;
+        margin-bottom: 2rem;
+        width: 100%;
+    }
+}
+
+@media (max-width: 683px) {
+    .container {
+     
+        /* padding-right: 2rem;
+        padding-left: 2rem; */
+    }
+
+    .title {
+
+        font-size: 3.5rem;
+      
+    }
+
+    .subTitle {
+        font-size: 1.5rem;
+    }
+
+    .contactTitle {
+
+        font-size: 3.5rem;
+    }
+
+    .contactSubTitle {
+        font-size: 1.5rem;
+    }
+
+
+    }
+
+
+
+@media (max-width: 475px) {
+
+
+}

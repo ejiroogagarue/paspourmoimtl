@@ -1,0 +1,38 @@
+.sideBarWrapper {
+  width: 100%;
+  background-color: #000000;
+
+  justify-content: flex-end;
+  flex-direction: column;
+  max-width: 100vw;
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  max-width: 36rem;
+  z-index: 10;
+}
+.sideBarDetails {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-right: 2rem;
+  margin-left: 2rem;
+}
+
+.sideBarCloseButton {
+  background-color: transparent;
+  border: transparent;
+  font-size: 6rem;
+  color: white;
+
+  justify-self: flex-end;
+}
+
+.sideBarTitle {
+  font-family: "condor", sans-serif;
+  font-weight: 500;
+  font-size: 5rem;
+  margin-top: 1.7rem;
+  color: #fff;
+  justify-self: flex-start;
+}

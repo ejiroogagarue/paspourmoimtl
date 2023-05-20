@@ -1,0 +1,69 @@
+.contentWrapper {
+    display: flex;
+    justify-content: flex-end;
+    /* margin-right: 12rem; */
+}
+.cartWrapper {
+    position: relative;
+    margin-left: auto;
+   }
+  .cart {
+    cursor: pointer;
+    color: #FFF;
+    display: flex;
+    flex-direction: row;
+    padding-top: 2rem;
+    padding-right: 2rem;
+    background-color: black;
+    border: none;
+  }
+
+  .cartName {
+    font-family: "condor", sans-serif;
+    font-weight: 400;
+    text-align: center;
+    font-size: 1.4rem;
+    margin-right: 1rem;
+    color: #FFF;
+
+  }
+
+
+
+
+  @media (max-width: 1536px) {
+      
+      
+      
+  }
+  @media (max-width: 1280px) {	
+    
+
+  
+  }
+  @media (max-width: 1024px) {
+  
+    
+    
+  }
+
+  @media (max-width: 768px) {
+
+
+     
+  }
+
+
+  @media (max-width: 640px) {
+    
+    .cartName {
+      white-space: nowrap;
+    }
+    
+  }
+
+  @media (max-width: 475px) {
+    
+   
+    
+  }
