@@ -43,7 +43,7 @@ const ProductCard = ({ product }) => {
       whileTap={{ scale: 0.95 }}
       className={styles.card}
     >
-      <Link href={`/products/${handle}`} >
+      <Link href={`/products/${handle}`} style={{ textDecoration: 'none' }} >
         <a className={styles.productCardWrapper} style={{ textDecoration: "none" }}>
           <motion.div className={styles.imageWrapper}>
             <Image
