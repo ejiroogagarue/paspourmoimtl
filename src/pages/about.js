@@ -4,13 +4,12 @@ import Image from "next/image";
 const about = () => {
   return (
     <>
-      <h2>About</h2>
-
       <div className={styles.container}>
+       
         <div className={styles.aboutWrapper}>
           {/* <h2 className={styles.aboutTitle}>ABOUT</h2> */}
-          <h2 className={styles.title}>PAS POUR MOI.</h2>
-          <h2 className={styles.subTitle}>DESIGNED IN TORONTO</h2>
+          <h2 className={styles.title}>About Us</h2>
+
           <p className={styles.about}>
             PAS POUR MOI is a Toronto based brand that makes eyewear and
             accessories designed for movement in the city.
@@ -23,19 +22,24 @@ const about = () => {
               Email: info@paspourmoi.com
             </h3>
 
-            <h3 className={styles.contactSubTitle}>Instagram: @paspourmoii</h3>
+            <h3 className={styles.contactSubTitle}>
+              Instagram:
+              <a
+                href="https://www.instagram.com/paspourmoii/?igshid=MzRlODBiNWFlZA%3D%3D"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                @paspourmoii
+              </a>
+            </h3>
           </div>
         </div>
-        <div className={styles.aboutPhoto}>
-          <div className={`${styles.imageWrapper} `}>
-            <Image
-              src="/editorial/ppm.png"
-              alt="Bun and Remy on the grass"
-              width={950}
-              height={950}
-              className={styles.image}
-            />
-          </div>
+        <div className={`${styles.imageWrapper} `}>
+          <img
+            src="/editorial/ppm.png"
+            alt="Bun and Remy on the grass"
+            className={styles.image}
+          />
         </div>
       </div>
     </>

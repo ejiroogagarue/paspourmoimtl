@@ -50,13 +50,13 @@ const Nav = () => {
               </div>
             </div>
 
-            <Link  href="/" style={{ textDecoration: 'none' }}><a className={styles.logo}>PAS POUR MOI</a></Link>
+            <Link legacyBehavior href="/" style={{ textDecoration: 'none' }}><a className={styles.logo}>PAS POUR MOI</a></Link>
            
-            <Cart
+            {/* <Cart
               cartQuantity={cartQuantity}
               cart={cart}
               className={styles.cartComponent}
-            />
+            /> */}
           </div>
 
           <div
@@ -68,15 +68,15 @@ const Nav = () => {
           >
             <ul className={styles.navLinks}>
               <li className={styles.navItems}>
-                <Link href="/" ><a onClick={() => setNavOpen(!navOpen)}>Home</a></Link>
+                <Link legacyBehavior href="/" ><a onClick={() => setNavOpen(!navOpen)}>HOME</a></Link>
                 <div className="navItemWrapper"></div>
               </li>
-              <li className={styles.navItems}>
-                <Link href="/store" ><a onClick={() => setNavOpen(!navOpen)}>Store</a></Link>
+              {/* <li className={styles.navItems}>
+                <Link legacyBehavior href="/store" ><a onClick={() => setNavOpen(!navOpen)}>STORE</a></Link>
                 <div className="navItemWrapper"></div>
-              </li>
+              </li> */}
               <li className={styles.navItems}>
-                <Link href="/about" ><a onClick={() => setNavOpen(!navOpen)}>About</a></Link>
+                <Link legacyBehavior href="/about" ><a onClick={() => setNavOpen(!navOpen)}>ABOUT</a></Link>
                 <div className="navItemWrapper"></div>
               </li>
             </ul>

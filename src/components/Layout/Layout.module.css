@@ -2,7 +2,7 @@
 .mainWrapper {
  background-color: #000000;
   width:100vw;
-  margin-top: 4rem;
+  /* margin-top: 4rem; */
 }
 
 
@@ -166,11 +166,11 @@
     
     }
     @media (max-width: 1024px) {
-      .mainWrapper{
+      /* .mainWrapper{
         margin-top: 0;
         padding-left: 2rem;
         padding-right: 2rem;
-      }
+      } */
       
       
     }

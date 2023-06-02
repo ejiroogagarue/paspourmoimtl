@@ -1,13 +1,14 @@
 .homeWrapper {
-  height: 89vh;
   display: flex;
   justify-content: center;
-  align-items: flex-end;
+  align-items: center;
   position: relative;
+  flex-direction: column;
+  margin-top: 6rem;
 }
 
 .imageWrapper {
-  width: 100%;
+  width: 34%;
 
   overflow: hidden;
   /* margin: 0 auto; */
@@ -18,17 +19,13 @@
   height: 100%;
 }
 
-.coverPhoto {
-  width: 50%;
-  display: flex;
-  justify-content: center;
-}
+
 
 .headline {
-  position: absolute;
+ 
   color: #fff;
-
-  bottom: 2.5rem;
+  margin-top: 0.5rem;
+  
 }
 
 .title {
@@ -47,17 +44,21 @@
 @media (max-width: 1536px) {
 }
 @media (max-width: 1280px) {
-  .coverPhoto {
-    width: 72%;
+  .imageWrapper {
+    width: 48%;
   }
 }
 @media (max-width: 1024px) {
   .homeWrapper {
-    align-items: flex-start;
+    margin-top: 0;
   }
 
-  .coverPhoto {
-    width: 72%;
+  .title {
+    font-size: 3rem;
+  }
+
+  .imageWrapper {
+    width: 48%;
   }
 }
 
@@ -65,40 +66,51 @@
   .headline {
     bottom: 7.5rem;
   }
+  .imageWrapper {
+    width: 56%;
+    justify-self: center;
+  }
 }
 
 @media (max-width: 640px) {
    .homeWrapper {
     display: grid;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: auto auto auto;
     width: 100%;
+    /* margin-top: 2rem; */
+    padding-left: 3rem;
+    padding-right: 3rem;
    }
-  .coverPhoto{
-    width: 90%;
-    justify-self: center;
+
+   .imageWrapper {
+    width: 70%;
   }
+
+  .title {
+    font-size: 2.2rem;
+  }
+
 
   .headline {
     position: static;
-    align-self: flex-start;
     justify-self: center;
-    margin-top: 14rem;
+    /* align-self: flex-start;
+    justify-self: center; */
+    /* margin-top: 14rem; */
   }
 }
 
 @media (max-width: 475px) {
 
-  .coverPhoto {
-    width: 120%;
+  .imageWrapper {
+    width: 88%;
   }
   .headline {
-    align-self: flex-end;
-    padding-left: 2rem;
-    padding-right: 2rem;
+    
   }
   .title {
     white-space: nowrap;
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
 
   .subTitle {

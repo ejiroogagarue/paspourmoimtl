@@ -12,7 +12,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   background-color: black;
-  padding-top: 1rem;
+  /* padding-top: 1rem; */
 }
 .navContainer {
   background: transparent;
@@ -196,12 +196,20 @@
   }
 
   .menuTitle {
-    left: 84px;
+    /* left: 84px; */
+    position: relative;
     font-size: 1.4rem;
+    left: 0px;
+    top: 0px;
   }
   .navPhoto {
     bottom: 5rem;
   }
+
+  .lineTop,
+.lineBottom {
+  display: none;
+}
 }
 
 @media (max-width: 768px) {
@@ -210,9 +218,7 @@
     right: 48px;
   }
 
-  .menuTitle {
-    left: 64px;
-  }
+
   .navPhoto {
    display: none;
   }
@@ -226,13 +232,8 @@
   }
     
 
-  .lineTop,
-  .lineBottom {
-    right: 5px;
-  }
-  .menuTitle {
-    left: 85px;
-  }
+ 
+  
 
   .title {
     font-size: 2rem;
@@ -242,6 +243,10 @@
 
   .subTitle{
     margin-left: 0;
+  }
+
+  .nav {
+    height: 10vh;
   }
 
  
