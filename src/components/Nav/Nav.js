@@ -4,6 +4,7 @@ import styles from "./Nav.module.css";
 import Cart from "../Cart/Cart";
 import Link from "next/link";
 import Image from "next/image";
+import NavigationMenu from "../NavigationMenu/NavigationMenu";
 const Nav = () => {
   // State
   const [navOpen, setNavOpen] = useState(false);
@@ -21,74 +22,20 @@ const Nav = () => {
       <div className={styles.nav}>
         <div className={styles.navContainer}>
           <div className={styles.navBar}>
-            <div
-              className={styles.menuToggle}
-              onClick={() => setNavOpen(!navOpen)}
-            >
-              <div
-                className={
-                  navOpen
-                    ? `${styles.hamBox} ${styles.hamBoxOpen}`
-                    : `${styles.hamBox}`
-                }
-              >
-                <span
-                  className={
-                    navOpen
-                      ? `${styles.lineTop} ${styles.spin}`
-                      : `${styles.lineTop} `
-                  }
-                ></span>
-                <span
-                  className={
-                    navOpen
-                      ? `${styles.lineBottom} ${styles.spin}`
-                      : `${styles.lineBottom} `
-                  }
-                ></span>
-                <span className={styles.menuTitle}>Menu</span>
-              </div>
+            <div className={styles.logoContainer}>
+              <Link legacyBehavior href="/" style={{ textDecoration: "none" }}>
+                <a className={styles.logo}>PAS POUR MOI.</a>
+              </Link>
             </div>
-
-            <Link legacyBehavior href="/" style={{ textDecoration: 'none' }}><a className={styles.logo}>PAS POUR MOI</a></Link>
-           
-            {/* <Cart
-              cartQuantity={cartQuantity}
-              cart={cart}
-              className={styles.cartComponent}
-            /> */}
-          </div>
-
-          <div
-            className={styles.navOverlay}
-            style={{
-              top: navOpen ? "0" : "-100%",
-              transitionDelay: navOpen ? "0s" : "0s",
-            }}
-          >
-            <ul className={styles.navLinks}>
-              <li className={styles.navItems}>
-                <Link legacyBehavior href="/" ><a onClick={() => setNavOpen(!navOpen)}>HOME</a></Link>
-                <div className="navItemWrapper"></div>
-              </li>
-              {/* <li className={styles.navItems}>
-                <Link legacyBehavior href="/store" ><a onClick={() => setNavOpen(!navOpen)}>STORE</a></Link>
-                <div className="navItemWrapper"></div>
-              </li> */}
-              <li className={styles.navItems}>
-                <Link legacyBehavior href="/about" ><a onClick={() => setNavOpen(!navOpen)}>ABOUT</a></Link>
-                <div className="navItemWrapper"></div>
-              </li>
-            </ul>
-
-            <div className={`${styles.imageWrapper} ${styles.navPhoto}`}>
-              <Image
-                src="/editorial/navPhotoPreview.png"
-                alt="Picture of the author"
-                width={450}
-                height={450}
-                className={styles.image}
-              />
+            <div className={styles.menuWrapper}>
+              <div className={styles.menuContainer}>
+                <NavigationMenu />
+                {/* <Cart
+                  cartQuantity={cartQuantity}
+                  cart={cart}
+                  className={styles.cartComponent}
+                /> */}
+              </div>
             </div>
           </div>
         </div>

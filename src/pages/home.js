@@ -9,13 +9,7 @@ const HomePage = () => {
   return (
     <div className={styles.homeWrapper}>
         <div className={`${styles.imageWrapper} `}>
-          {/* <Image
-            src="/editorial/Brioni.gif"
-            alt="Picture of the author"
-            width={750}
-            height={750}
-            className={styles.image}
-          /> */}
+      
 
           <img  src="/editorial/Brioni.gif"
             alt="Picture of the author"
@@ -23,12 +17,11 @@ const HomePage = () => {
             />
         </div>
         <div className={styles.headline}>
-          <h2 className={styles.title}>PPM BY PAS POUR MOI</h2>
+          <h2 className={styles.title}>Subscribe to NewsLetter, Coming Soon.....</h2>
           
-          {/* <h2 className={styles.subTitle}>SPRING/SUMMER 2023</h2>
-          <h2 className={styles.subTitle}>COLLECTION 001</h2> */}
+          
         </div>
-         {/* <NewsLetter/> */}
+      
          <Subscribe/>
     </div>
   );

@@ -1,16 +1,18 @@
-import React, { useRef, useState } from "react";
+import { useRef, useState } from "react";
+import React from "react";
 import styles from "./Subscribe.module.css";
+
 const Subscribe = () => {
-  // Create a referenc to the input so we can fetch / clear its value.
+  // 1. Create a reference to the input
   const inputEl = useRef(null);
 
-  // Hold a message in state to handle the response from our API.
+  // 2. Hold a message in state
   const [message, setMessage] = useState("");
 
   const subscribe = async (e) => {
     e.preventDefault();
 
-    // Send a request to our API with the user's email address.
+    // 3. Send a request to our API with the user's email address.
     const res = await fetch("/api/subscribe", {
       body: JSON.stringify({
         email: inputEl.current.value,
@@ -24,43 +26,36 @@ const Subscribe = () => {
     const { error } = await res.json();
 
     if (error) {
-      // if there was an error, update the message in state.
+      // 4. If there was an error, update the message in state.
       setMessage(error);
       return;
     }
 
-    // Clear the input value and show a success message.
+    // 5. Clear the input value and show a success message.
     inputEl.current.value = "";
     setMessage("Success! 🎉 You are now subscribed to the newsletter.");
   };
-
   return (
-    <>
-
-      <h3 className={styles.title}>Coming soon. Join Our Mailing List to stay updated.</h3>
+    <div className={styles.container}>
+      
       <form onSubmit={subscribe} className={styles.formContainer}>
-        <label htmlFor="email-input">{"Email Address"}</label>
-        <input
-          id="email-input"
-          name="email"
-          placeholder="Enter Email Address...."
-          ref={inputEl}
-          required
-          type="email"
-          className={styles.textBox}
-        />
+      
+        <div className={styles.formInput}>
+          <input
+            id="email-input"
+            name="email"
+            placeholder="Enter your email...."
+            ref={inputEl}
+            required
+            type="email"
+            className={styles.subscribeFormInput}
+          />
+          <button type="submit" className={styles.submitButton}>{"Subscribe "}</button>
+        </div>
 
-        <button type="submit" className={styles.submitButton}>
-          {"Subscribe"}
-        </button>
+        <div className={styles.message}>{message ? message : ` `}</div>
       </form>
-
-      <div>
-        {message
-          ? message
-          : `I'll only send emails when new content is posted, No spam.`}
-      </div>
-    </>
+    </div>
   );
 };
 

@@ -10,16 +10,12 @@ const store = ({ products }) => {
   return (
     <>
       <section className={styles.coverWrapper}>
-        <div className={styles.coverPhotoWrapper}>
-          <div className={`${styles.imageWrapper} ${styles.coverPhoto}`}>
-            <Image
-              src="/editorial/temi.jpg"
-              alt="temi in Pas poour moi"
-              width={650}
-              height={500}
-              className={styles.image}
-            />
-          </div>
+        <div className={styles.imageWrapper}>
+          <img
+            src="/editorial/temi.jpg"
+            alt="temi in Pas poour moi"
+            className={styles.image}
+          />
         </div>
 
         <div className={styles.coverInformation}>
@@ -27,9 +23,8 @@ const store = ({ products }) => {
           <h3 className={styles.coverSubTitle}>THE BRIONI</h3>
         </div>
       </section>
-      <section className={styles.productWrapper}>
-        <ProductList products={products} />
-      </section>
+
+      <ProductList products={products} />
     </>
   );
 };

@@ -21,11 +21,11 @@ const Layout = ({ children }) => {
     <>
       <div className={styles.mainWrapper}>
         <div className={styles.container}>
-          <header className={styles.headerWrapper}>
+           <header className={styles.headerWrapper}>
             <div className={styles.menu}>
               <Nav />
             </div>
-          </header>
+          </header> 
         </div>
 
         <main className={styles.mainWrapper}>{children}</main>

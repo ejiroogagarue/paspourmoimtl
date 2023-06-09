@@ -27,7 +27,7 @@
 
 .headerWrapper {
   background-color: #000000;
-  padding-left: 4rem;
+  /* padding-left: 4rem; */
 
  width: 100%;
  display: grid;
@@ -188,9 +188,12 @@
       
     }
 
-    @media (max-width: 475px) {
+    @media (max-width: 555px) {
       
-     
+     .mainWrapper {
+      /* padding-left: 2.5rem;
+      padding-right: 2.5rem; */
+     }
       
     }
 

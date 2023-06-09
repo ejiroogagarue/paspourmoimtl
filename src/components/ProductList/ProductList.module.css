@@ -1,11 +1,15 @@
 .productListWrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
 
 .productGrid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-
+  grid-row-gap: 5rem;
   row-gap: 100px;
+  column-gap: 6rem;
 }
 
 @media (max-width: 1536px) {
@@ -13,6 +17,14 @@
 @media (max-width: 1280px) {
 }
 @media (max-width: 1024px) {
+
+  .productGrid {
+    display: grid;
+    grid-template-columns: auto;
+    grid-row-gap: 5rem;
+    row-gap: 100px;
+    column-gap: 6rem;
+  }
 }
 
 @media (max-width: 768px) {
@@ -24,7 +36,23 @@
 }
 
 @media (max-width: 640px) {
+
+  .productListWrapper {
+    width: 100%;
+    /* margin-left: 4.5rem; */
+  }
 }
 
 @media (max-width: 475px) {
+
+
+  .productListWrapper {
+    width: 100%;
+    /* margin-left: 6.5rem; */
+  }
+
+  .productGrid {
+    width: 100%;
+    /* margin-left: 4rem; */
+  }
 }

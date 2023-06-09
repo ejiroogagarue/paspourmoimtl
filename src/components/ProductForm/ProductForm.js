@@ -54,7 +54,7 @@ const ProductForm = ({ product }) => {
   return (
     <div className={styles.productFormWrapper}>
       <h3 className={styles.price}>{formatter.format(product.variants.edges[0].node.price.amount)}</h3>
-
+{/* 
       <button
         onClick={() => {
           addToCart(selectedVariant);
@@ -63,7 +63,7 @@ const ProductForm = ({ product }) => {
         className={styles.pushable}
       >
         <span className={styles.front}>ADD TO CART</span>
-      </button>
+      </button> */}
     </div>
   );
 };

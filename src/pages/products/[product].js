@@ -26,7 +26,7 @@ const backVariants = {
 
 const ProductPage = ({ product }) => {
   const router = useRouter();
-  
+
   return (
     <>
       <motion.div
@@ -36,12 +36,6 @@ const ProductPage = ({ product }) => {
         exit="exit"
       >
         <div className={styles.productContainer}>
-          {/* <Link href="/store" style={{ textDecoration: "none" }}>
-            <motion.div className={styles.back} variants={backVariants}>
-              ← Back
-            </motion.div>
-          </Link> */}
-
           <ProductPageContent product={product} />
         </div>
       </motion.div>

@@ -1,0 +1,143 @@
+$red: #e20001;
+$black: #191919;
+
+.title {
+  font-family: "condor", sans-serif;
+  font-weight: 400;
+  /* text-align: center; */
+  font-size: 1.4rem;
+  /* margin-right: 1rem; */
+  color: #fff;
+  /* justify-self: center; */
+  /* margin-left: 5rem;
+    margin-top: 2px; */
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 300px;
+  background: #fff;
+}
+
+.menuButton {
+  border: none;
+  background: none;
+  outline: none;
+  cursor: pointer;
+  font-family: "condor", sans-serif;
+  font-weight: 400;
+  text-align: left;
+  font-size: 1.4rem;
+  color: #fff;
+  z-index: 20;
+}
+
+.navHeader {
+    position: relative;
+}
+.navMenuButton {
+    color: #000;
+    border: none;
+    background: none;
+    outline: none;
+    cursor: pointer;
+    font-family: "condor", sans-serif;
+    font-weight: 400;
+    text-align: center;
+    font-size: 1.4rem;
+    position: absolute;
+    top: 5rem;
+    left: 10rem;
+    font-weight: 700;
+    font-size: 3rem;
+}
+.menuToggle {
+  cursor: pointer;
+}
+
+.navOverlay {
+  position: fixed;
+  background-color: #fff;
+  z-index: 10;
+  top: -100%;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  transition: all 2s cubic-bezier(0.16, 1, 0.3, 1);
+  display: grid;
+    grid-template-rows: auto 1fr;
+    height: calc(100vh - calc(100vh - 100%));
+}
+
+
+.hamBox {
+    position: relative;
+    width: 44px;
+    height: 44px;
+    cursor: pointer;
+    transition:0.3s ease;
+    /* border-radius: 50%; */
+    padding: 2.4em;
+}
+
+.hamBox:hover {
+    /* background: #2a2a2f; */
+    }
+
+    .navLinks {
+ /* transform: translate(-50%, -50%); */
+ margin: 0;
+ padding: 0;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+    }
+
+    .navLinks li {
+     list-style: none;
+     position: relative;
+     padding-bottom: 3rem;
+
+    }
+
+    .navLinks li a {
+        text-decoration: none;
+        color: #000;
+        font-family: "condor", sans-serif;
+        list-style: none;
+        font-size: 6rem;
+        font-weight: 400;
+        transition: all 2s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .navItemWrapper {
+        content: "";
+        position: absolute;
+        top: 120px;
+    left: -10%;
+width: 120%;
+height: 100%;
+background : #18181c;
+margin: 0 auto;    }
+
+
+.navFooter {
+    width: 25%;
+    position: relative;
+}
+
+.navFooterImage {
+    /* position: absolute; */
+    width: 100%;
+    position: absolute;
+    width: 100%;
+    /* top: -28px; */
+    bottom: 0;
+    left: 90rem;
+
+}

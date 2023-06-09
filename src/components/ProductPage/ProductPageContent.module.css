@@ -1,21 +1,4 @@
-.imageWrapper {
-  width: 100%;
-
-  overflow: hidden;
-}
-
-.imageWrapper .image {
-  width: 100%;
-  height: 100%;
-}
-
-.coverPhoto {
-  width: 90%;
-}
-
-.removePhoto {
-}
-
+/* Product Presentation */
 .productPresentation {
   display: grid;
   grid-template-rows: auto auto auto auto;
@@ -25,17 +8,61 @@
   margin-top: 4rem;
 }
 
-.productDescription {
-  position: fixed;
-  width: 30%;
-  bottom: 15rem;
-  left: 2rem;
+/* PRODUCT IMAGE CONTAINER */
+
+.productImageContainer {
+  display: flex;
+  justify-content: center;
 }
+
+/* IMAGE WRAPPER */
+
+.imageWrapper {
+  width: 64%;
+  overflow: hidden;
+ width: 30rem;
+}
+
+.imageWrapper .image {
+  width: 100%;
+  height: 100%;
+}
+
+/* REMOVE PHOTO */
+
+.removePhoto {
+}
+
+/* PRODUCT DETAILS CONTAINER  */
+
+.productDetailsContainer {
+  position: relative;
+}
+/* PRODUCT DETAILS WRAPPER  */
+
+.productDetailsWrapper {
+  position: fixed;
+  top: 22rem;
+}
+
+/* PRODUCT DETAILS  */
+
+.productDetails {
+}
+
+/* PRODUCT DETAILS FORM  */
+
+.productDetailsForm {
+  margin-bottom: 2rem;
+}
+
+/* PRODUCT DESCRIPTION TITLE */
+
 .productDescriptionTitle {
   color: #000000;
   font-weight: 600;
 
-  font-size: 2.5rem;
+  font-size: 5.5rem;
 
   white-space: nowrap;
   bottom: 17rem;
@@ -44,28 +71,12 @@
   font-weight: 600;
 }
 
-.productDescriptionDetail {
-  font-family: "Shippori Mincho", serif;
-  color: #000000;
+/* PRODUCT DETIALS SPECIFICATION  */
 
-  line-height: 1.5;
-
-  text-align: left;
-  font-size: 1rem;
-  width: 63%;
-  overflow-wrap: break-word;
-  margin-bottom: 1rem;
-  font-family: "condor", sans-serif;
-  font-weight: 200;
+.productDetailsSpecification {
 }
 
-.productDetails {
-  position: fixed;
-  width: 30%;
-
-  bottom: 4rem;
-  right: -1rem;
-}
+/* SUBTITLE */
 .subTitle {
   font-family: "Shippori Mincho", serif;
   color: #000000;
@@ -81,63 +92,118 @@
   font-weight: 700;
   text-align: center;
 }
-.productMetafieldWrapper {
-  list-style: square;
+
+/* PRODUCT DESCRIPTION DETAIL */
+.productDescriptionDetail {
   font-family: "Shippori Mincho", serif;
   color: #000000;
-  font-size: 0.8rem;
-  margin-left: 19px;
 
-  display: grid;
-  grid-template-rows: auto auto auto auto auto auto;
-  grid-row-gap: 0.75rem;
-  grid-row-gap: 0.75rem;
-  grid-row-gap: 0.75rem;
-  row-gap: 0.75rem;
-  width: 75%;
+  line-height: 1.5;
+
+  text-align: left;
+  font-size: 1rem;
+  width: 63%;
+  overflow-wrap: break-word;
+  margin-bottom: 1rem;
+  font-family: "condor", sans-serif;
+  font-weight: 200;
 }
+
+
+
 
 @media (max-width: 1536px) {
   .productDescriptionTitle {
     font-size: ;
   }
 
-  .subTitle {
-  }
+  
 }
 @media (max-width: 1280px) {
+
+  .productDetailsSpecification {
+    width: 100%
+  }
+
+  .productDescriptionTitle {
+    font-size: 3.25rem;
+  }
+
+  .imageWrapper {
+    width: 20rem;
+  }
 }
 @media (max-width: 1024px) {
+
+
+  .productDetailsWrapper {
+    top: 20rem;
+  }
   .productDescriptionTitle {
-    font-size: 2rem;
+    font-size: 3rem;
   }
   .productDescription {
     position: fixed;
     width: 30%;
-    bottom: 31rem;
+    top: 14rem;
     left: 5rem;
   }
   .subTitle {
-    font-size: 2.25rem;
+    font-size: 1.75rem;
+    width: 100%;
+  }
+
+  .productDescriptionDetail {
+    width: 100%;
   }
 
   .productDetails {
     position: relative;
-    margin-top: 3.8rem;
+    /* margin-top: 3.8rem; */
     width: 100%;
 
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     margin-bottom: 7rem;
   }
 
-  .productDescriptionDetail {
-    text-align: center;
+  .imageWrapper {
+    width: 20rem;
   }
+
+  .productDetailsSpecifications {
+    width: 86%;
+    width: 21rem;
+    padding-right: 2rem;
+  }
+
+ 
+
+  
 }
 
-@media (max-width: 820px) {
+@media (max-width: 768px) {
+
+  .productDetailsSpecifications {
+    padding-right: 2rem;
+  }
+  .imageWrapper {
+    width: 64%;
+    width: 16rem;
+  }
+  .subTitle {
+    width: 100%;
+  }
+  .productContainer {
+    padding-top: 0;
+    column-gap: 2rem;
+  }
+  .productDetailsWrapper {
+    position: fixed;
+    top: 14rem;
+    /* right: 2rem; */
+  }
   .productDescription {
     position: static;
     margin-top: 2rem;
@@ -154,22 +220,122 @@
   }
   .productPresentation {
     grid-template-columns: auto;
-    grid-row-gap: 0rem;
+    grid-row-gap: 4rem;
   }
+
+  .removePhoto {
+    /* display: none; */
+  }
+
+  .productDescriptionDetail {
+    text-align: center;
+    width: 100%;
+  }
+
+  .productDetails {
+    align-items: flex-start;
+  }
+
+  .subTitle {
+    font-size: 1.5rem;
+   
+  }
+}
+
+@media (max-width: 640px) {
+
+  .productDetails {
+    margin-bottom: 0rem;
+    align-items: center;
+  }
+  .productContainer {
+     margin-top: 0rem;
+  }
+
+  .productPresentation {
+    margin-top: 0rem;
+  }
+  .productDetailsWrapper {
+    position: static;
+  }
+  .imageWrapper {
+    width: 64%;
+    width: 20rem;
+  }
+
+  .productDetails {
+    margin-top: 1rem;
+  }
+
+  .productDetailsSpecifications {
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+
+    align-items: center;
+  }
+
+  .productDescriptionDetail {
+    width: 63%;
+    width: 23rem;
+    text-align: left;
+    font-size: 1.2rem;
+  }
+
+  /* .productDetails {
+    margin-bottom: 2rem;
+  } */
 
   .removePhoto {
     display: none;
   }
 }
 
-@media (max-width: 640px) {
-}
-
 @media (max-width: 475px) {
+  .productPresentation {
+    grid-row-gap: 0;
+    margin-top: 6rem;
+  }
   .subTitle {
     font-size: 1.5rem;
+    text-align: center;
+    width: 94%;
   }
   .productDetails {
     margin-right: 3rem;
+    margin-top: 0;
+  }
+
+  .imageWrapper {
+    width: 20rem;
+  }
+
+  .productDetailsSpecifications {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    padding-top: 1rem;
+  }
+
+  .productDescriptionDetail {
+    text-align: left;
+    width: 100%;
+    color: #fff;
+    width: 22rem;
+  }
+
+
+  .productDescription {
+    font-size: 1.1rem;
+    /* white-space: normal; */
+    width: 16rem;
+  }
+  .productDetailsForm {
+    margin-top: 1rem;
+  }
+
+  .productDescriptionTitle {
+    font-size: 2.5rem;
   }
 }

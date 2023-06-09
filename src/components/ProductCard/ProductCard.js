@@ -43,14 +43,14 @@ const ProductCard = ({ product }) => {
       whileTap={{ scale: 0.95 }}
       className={styles.card}
     >
-      <Link href={`/products/${handle}`} style={{ textDecoration: 'none' }} >
+      <Link href={`/products/${handle}`} style={{ textDecoration: 'none' }} legacyBehavior>
         <a className={styles.productCardWrapper} style={{ textDecoration: "none" }}>
           <motion.div className={styles.imageWrapper}>
-            <Image
+        
+              <img
               src={url}
               alt={altText}
-              width={1500}
-              height={1500}
+              
               className={styles.image}
             />
           </motion.div>
