@@ -157,6 +157,10 @@
     /* display: none; */
   }
 
+  .logoContainer {
+    margin-bottom: 12px;
+  }
+
   .menuContainer {
     /* width: 52%; */
     width: 24rem;
