@@ -51,6 +51,7 @@
     cursor: pointer;
     font-weight: 500;
     border-color: black;
+    color: #000;
   }
   
   .message {
