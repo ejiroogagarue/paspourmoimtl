@@ -44,7 +44,7 @@
     font-size: 1rem;
     font-family: "condor", sans-serif;
     font-weight: 500;
-    background-color: #fffffff;
+    background-color: #fff;
     text-align: center;
  
     font-family: "condor", sans-serif;
@@ -81,7 +81,7 @@
 
 @media (max-width: 768px) {
   .container {
-    margin-top: 1rem;
+    /* margin-top: 1rem; */
   }
 
   /* .subscribeFormInput {
@@ -110,6 +110,7 @@
         text-align: center;
         margin-top: 1rem;
         width: 22rem;
+        width: 20rem;
     }
 
     .submitButton { 

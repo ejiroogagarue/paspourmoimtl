@@ -3,6 +3,8 @@
  background-color: #000000;
   width:100vw;
   /* margin-top: 4rem; */
+  margin-top: 4rem;
+  /* margin-bottom: 6rem; */
 }
 
 
@@ -177,7 +179,9 @@
 
     @media (max-width: 768px) {
 
-
+      .mainWrapper{
+        margin-top: 0rem;
+      }
        
     }
 

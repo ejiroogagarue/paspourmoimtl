@@ -17,7 +17,7 @@ const HomePage = () => {
             />
         </div>
         <div className={styles.headline}>
-          <h2 className={styles.title}>Subscribe to NewsLetter, Coming Soon.....</h2>
+          <h2 className={styles.title}>Join the mailing list.</h2>
           
           
         </div>

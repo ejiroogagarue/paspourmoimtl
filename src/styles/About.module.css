@@ -8,6 +8,8 @@
   margin-top: 13rem;
   justify-content: center;
   margin-left: 3rem;
+  margin-left: 11rem;
+  margin-top: 7rem;
 }
 
 .aboutWrapper {
@@ -49,7 +51,7 @@
 .imageWrapper {
   width: 90.5%;
   overflow: hidden;
-
+  width: 68.5%;
   /* justify-self: flex-end; */
 }
 

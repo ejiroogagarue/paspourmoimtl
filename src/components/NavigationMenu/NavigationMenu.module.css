@@ -141,3 +141,36 @@ margin: 0 auto;    }
     left: 90rem;
 
 }
+@media (max-width: 1280px) {
+  
+  }
+  @media (max-width: 1024px) {
+    
+  }
+  
+  
+  @media (max-width: 768px) {}
+  
+  @media (max-width: 640px) {
+ 
+    .navHeader {
+        /* font-size: 2rem; */
+        margin-bottom: 5rem;
+      }
+
+      .navMenuButton {
+        font-size: 2rem;
+        left: 13rem;
+      }
+  
+  }
+  
+  
+
+  @media (max-width: 475px) {
+
+    
+    
+  }
+  
+

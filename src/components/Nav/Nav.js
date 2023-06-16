@@ -24,7 +24,7 @@ const Nav = () => {
           <div className={styles.navBar}>
             <div className={styles.logoContainer}>
               <Link legacyBehavior href="/" style={{ textDecoration: "none" }}>
-                <a className={styles.logo}>PAS POUR MOI.</a>
+                <a className={styles.logo}>PAS POUR MOI</a>
               </Link>
             </div>
             <div className={styles.menuWrapper}>
