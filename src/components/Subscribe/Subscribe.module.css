@@ -123,6 +123,11 @@
 @media (max-width: 475px) {
     .subscribeFormInput {
         width: 15rem;
+        width: 13rem;
+    }
+
+    .formContainer{
+        margin-left: 1rem;
     }
 
     .container {
