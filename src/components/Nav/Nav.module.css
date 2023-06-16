@@ -133,6 +133,10 @@
     margin-top: 1.5rem;
   }
 
+  .logoContainer {
+    margin-bottom: 12px;
+  }
+
 
 }
 
@@ -157,9 +161,7 @@
     /* display: none; */
   }
 
-  .logoContainer {
-    margin-bottom: 12px;
-  }
+ 
 
   .menuContainer {
     /* width: 52%; */
