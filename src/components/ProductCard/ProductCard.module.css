@@ -131,8 +131,14 @@
   
   @media (max-width: 640px) {
 
+    .productCardWrapper {
+     
+      margin-left: 0rem;
+    }
+
     .imageWrapper {
       width: 85%;
+      width: 30rem;
      }
 
 
@@ -156,6 +162,11 @@
   
     .imageWrapper {
       width: 88%;
+     }
+
+
+     .productCardWrapper {
+      margin-left: 3rem;
      }
 
 

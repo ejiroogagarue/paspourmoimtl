@@ -55,9 +55,16 @@
 }
 
 @media (max-width: 1536px) {
+
+  .imageWrapper {
+    
+  }
 }
 
 @media (max-width: 1280px) {
+  .imageWrapper {
+    width: 42rem;
+  }
 }
 
 @media (max-width: 1024px) {
@@ -66,7 +73,7 @@
   }
 
   .imageWrapper {
-    width: 40rem;
+    width: 34rem;
 
  
   }
@@ -125,7 +132,7 @@
     align-self: center;
 
     margin-top: 1rem;
-    margin-left: 4rem;
+    /* margin-left: 4rem; */
   }
 
   .coverTitle {

@@ -35,3 +35,36 @@
   .pushable:active .front {
     transform: translateY(-2px);
   }
+
+
+  @media (max-width: 1536px) {
+  }
+  @media (max-width: 1280px) {
+  }
+  @media (max-width: 1024px) {
+  
+    .productGrid {
+      display: grid;
+      grid-template-columns: auto;
+      grid-row-gap: 5rem;
+      row-gap: 100px;
+      column-gap: 6rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+ 
+  }
+  
+  @media (max-width: 640px) {
+  
+ 
+  }
+  
+  @media (max-width: 475px) {
+  
+    .price {
+     color: #fff;
+  }
+  }
+  

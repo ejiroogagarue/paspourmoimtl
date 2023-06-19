@@ -43,6 +43,7 @@
 .productDetailsWrapper {
   position: fixed;
   top: 22rem;
+  top: 18rem;
 }
 
 /* PRODUCT DETAILS  */
@@ -137,7 +138,7 @@
 
 
   .productDetailsWrapper {
-    top: 20rem;
+    /* top: 20rem; */
   }
   .productDescriptionTitle {
     font-size: 3rem;
@@ -201,7 +202,7 @@
   }
   .productDetailsWrapper {
     position: fixed;
-    top: 14rem;
+    top: 18rem;
     /* right: 2rem; */
   }
   .productDescription {
@@ -323,6 +324,7 @@
     width: 100%;
     color: #fff;
     width: 22rem;
+    margin-left: 3rem;
   }
 
 
@@ -330,6 +332,7 @@
     font-size: 1.1rem;
     /* white-space: normal; */
     width: 16rem;
+   
   }
   .productDetailsForm {
     margin-top: 1rem;
@@ -337,5 +340,6 @@
 
   .productDescriptionTitle {
     font-size: 2.5rem;
+    color: #fff;
   }
 }

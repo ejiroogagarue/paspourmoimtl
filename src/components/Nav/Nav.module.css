@@ -83,14 +83,14 @@
   .logo {
    
     font-size: 6.5rem;
-    font-size: 4.75rem;
+    /* font-size: 4.75rem; */
   
   }
 
   .menuContainer {
     width: 60%;
     width: 50rem;
-    width: 36rem;
+    /* width: 36rem; */
   }
   
 }

@@ -48,6 +48,9 @@
     padding-top: 0rem;
     grid-template-columns: auto;
   }
+  .productWrapper {
+    background-color:#000;
+  }
 }
 
 @media (max-width: 400px) {
