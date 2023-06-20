@@ -115,12 +115,14 @@
     white-space: nowrap;
     font-size: 4.5rem;
     margin-top: 1rem;
+    font-size: 6rem;
  
   }
 
   .menuContainer {
     width: 52%;
     width: 35rem;
+    width: 46rem;
   }
 }
 
