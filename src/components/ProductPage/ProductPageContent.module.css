@@ -311,7 +311,7 @@
 
   .imageWrapper {
     width: 20rem;
-    width: 15rem;
+    /* width: 15rem; */
   }
 
   .productDetailsSpecifications {
