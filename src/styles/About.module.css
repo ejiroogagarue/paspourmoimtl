@@ -154,8 +154,9 @@
   .container {
     margin-top: 10rem;
     /* margin-left: 3rem; */
-    padding-left: 6rem;
-    padding-right: 6rem;
+    /* padding-left: 6rem;
+    padding-right: 6rem; */
+    overflow: hidden;
   }
    .title {
     font-size: 3.5rem;

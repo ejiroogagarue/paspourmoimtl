@@ -50,6 +50,7 @@
   }
   .productWrapper {
     background-color:#000;
+    overflow: hidden;
   }
 }
 
