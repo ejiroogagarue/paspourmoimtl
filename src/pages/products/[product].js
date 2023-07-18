@@ -5,6 +5,7 @@ import styles from "@/styles/ProductPage.module.css";
 import { motion } from "framer-motion";
 import { useRouter } from "next/router";
 import Link from "next/link";
+import Head from "next/head";
 const transition = {
   duration: 1,
   ease: [0.43, 0.13, 0.23, 0.96],
@@ -29,6 +30,11 @@ const ProductPage = ({ product }) => {
 
   return (
     <>
+      <Head>
+        <title>The Brioni</title>
+        <meta name="description" content="The Brioni" key="desc" />
+        <meta property="og:title" content="The Brioni - Pas Pour Moi" />
+      </Head>
       <motion.div
         className={styles.productWrapper}
         initial="exit"

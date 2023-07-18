@@ -27,7 +27,7 @@ const Subscribe = () => {
 
     if (error) {
       // 4. If there was an error, update the message in state.
-      setMessage(error);
+      setMessage("Email already Exists");
       return;
     }
 

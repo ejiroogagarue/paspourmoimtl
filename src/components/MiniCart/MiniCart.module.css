@@ -10,17 +10,21 @@
   margin-left: 2rem;
   margin-top: 2rem;
   margin-right: 2rem;
-  display: grid;
-  grid-template-rows: 1fr 1fr;
+  /* display: grid;
+  grid-template-rows: 1fr 1fr; */
+  display: flex;
+
+  flex-direction: column;
 }
 
 .checkoutItems {
 }
 
 .checkoutFunctions {
-  align-self: flex-end;
+  align-self: flex-start;
   color: #fff;
   display: grid;
+  margin-top: 1rem;
   grid-row-gap: 1rem;
 }
 

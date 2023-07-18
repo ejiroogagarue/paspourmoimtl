@@ -30,11 +30,11 @@ const Nav = () => {
             <div className={styles.menuWrapper}>
               <div className={styles.menuContainer}>
                 <NavigationMenu />
-                {/* <Cart
+                <Cart
                   cartQuantity={cartQuantity}
                   cart={cart}
                   className={styles.cartComponent}
-                /> */}
+                />
               </div>
             </div>
           </div>

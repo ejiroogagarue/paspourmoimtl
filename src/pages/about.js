@@ -1,9 +1,20 @@
 import React from "react";
 import styles from "@/styles/About.module.css";
 import Image from "next/image";
+import Head from "next/head";
 const about = () => {
   return (
     <>
+     <Head>
+       <title>About Us - Pas Pour Moi</title>
+       <meta
+          name="description"
+          content="About Us"
+          key="desc"
+        />
+        <meta property="og:title" content="About Us - Pas Pour Moi"/>
+       
+     </Head>
       <div className={styles.container}>
        
         <div className={styles.aboutWrapper}>
